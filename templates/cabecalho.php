@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER["DOCUMENT_ROOT"] . '/agitos_slz/bd/conexao.php';
 session_start();
-date_default_timezone_set("America/Sao_Paulo");
+/*date_default_timezone_set("America/Sao_Paulo");
 
 $date = new IntlDateFormatter(
   'pt_BR',
@@ -28,7 +28,7 @@ $datahora = new IntlDateFormatter(
   'America/Sao_Paulo',
   IntlDateFormatter::GREGORIAN,
   "dd 'de' MMMM 'de' yyyy 'às' HH':'mm':'ss"
-);
+);*/
 
 ?>
 
@@ -90,6 +90,7 @@ $datahora = new IntlDateFormatter(
                   <a href="/agitos_slz/views/admin/admin_postagens_blog.php">Gerenciamento do Blog</a>
                   <a href="/agitos_slz/views/admin/admin_eventos.php">Gerenciamento de Eventos</a>
                   <a href="/agitos_slz/views/admin/admin_usuario.php">Gerenciamento de Usuários</a>
+                  <a href="/agitos_slz/views/admin/adicionar_postagem_experiencias.php">Gerenciamento Experiencias</a>
                   <a href="/agitos_slz/controllers/logout_controller.php">Logout</a>
                 </div>
               </div>

@@ -47,3 +47,19 @@ create table eventos (
     descricao_evento longtext,
     primary key(id_evento)
 );
+
+/* cria a tabela conteudo para postagens*/
+CREATE TABLE experiencia (
+    id_exper INT NOT NULL AUTO_INCREMENT,
+    id_usuario int not null,
+	titulo varchar(250) not null,
+    nome VARCHAR(60) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    conteudo TEXT NOT NULL,
+    imagem_post LONGBLOB NOT NULL,
+    referencia TEXT NOT NULL,
+    Autor VARCHAR(30) NOT NULL,
+    data_publicacao timestamp default current_timestamp on update current_timestamp,
+  	primary key (id_exper),
+    foreign key (id_usuario) references usuarios(id_usuario)
+);

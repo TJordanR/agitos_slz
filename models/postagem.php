@@ -1,6 +1,6 @@
 <?php
 
-class Postagem
+class Experiencias
 {
     public $id_post;
     public $titulo;
